@@ -1,0 +1,26 @@
+.menuItem .active{
+    background-color: #ff686e !important;
+    color: #fff !important;
+}
+
+.menuItem{
+    border: 1px solid #ff686e;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menuItem a.active, .menuItem a{
+    padding: .5rem !important;
+}
+
+
+.sidebar > div{
+    border-bottom:  1px solid silver;
+    padding: 1rem 0;
+}
+
+/* .drawer-side .menu .active{
+  background-color: transparent !important;
+  color: #fff !important;
+} */
+
