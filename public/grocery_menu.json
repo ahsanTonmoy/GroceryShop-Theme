@@ -1,123 +1,128 @@
 [
-    {
-        "id": "1",
-        "name": "Fruits & Vegetables",
-        "image": "https://i.ibb.co/rHHnh3x/fruits-And-Vegs.png",
-        "menu_link": "/menu/fruits-and-vegetables"
-      },
-      {
-        "id": "2",
-        "name": "Dairy",
-        "image": "https://i.ibb.co/smHPdDm/dairy-eggs.jpg",
-        "menu_link": "/menu/dairy"
-      },
-      {
-        "id": "3",
-        "name": "Bakery",
-        "image": "https://i.ibb.co/P6dGHn2/baking.jpg",
-        "menu_link": "/menu/bakery"
-      },
-      {
-        "id": "4",
-        "name": "Meat & Seafood",
-        "image": "https://i.ibb.co/yd0rFQq/meat-And-Fish.jpg",
-        "menu_link": "/menu/meat-and-seafood"
-      },
-      {
-        "id": "5",
-        "name": "Pantry Essentials",
-        "image": "https://i.ibb.co/Ps2WKTJ/pest-control.jpg",
-        "menu_link": "/menu/pantry-essentials"
-      },
-      {
-        "id": "6",
-        "name": "Beverages",
-        "image": "https://i.ibb.co/Yc1pykG/beverages.png",
-        "menu_link": "/menu/beverages"
-      },
-      {
-        "id": "7",
-        "name": "Snacks",
-        "image": "https://i.ibb.co/DpJ69wV/snacks.jpg",
-        "menu_link": "/menu/snacks"
-      },
-      {
-        "id": "8",
-        "name": "Frozen Foods",
-        "image": "https://i.ibb.co/Ps2WKTJ/pest-control.jpg",
-        "menu_link": "/menu/frozen-foods"
-      },
-      {
-        "id": "9",
-        "name": "cooking",
-        "image": "https://i.ibb.co/y61gTGv/cooking.png",
-        "menu_link": "/menu/cooking"
-      },
-      {
-        "id": "10",
-        "name": "Canned Goods",
-        "image": "",
-        "menu_link": "/menu/canned-goods"
-      },
-      {
-        "id": "11",
-        "name": "Household",
-        "image": "https://i.ibb.co/j6VXdGb/home-cleaning.jpg",
-        "menu_link": "/menu/household"
-      },
-      {
-        "id": "12",
-        "name": "Personal Care",
-        "image": "https://i.ibb.co/2YQmR6n/beauty.jpg",
-        "menu_link": "/menu/personal-care"
-      },
-      {
-        "id": "13",
-        "name": "Baking Supplies",
-        "image": "",
-        "menu_link": "/menu/baking-supplies"
-      },
-      {
-        "id": "14",
-        "name": "Baby Care",
-        "image": "https://i.ibb.co/GRgc8H2/baby-care.jpg",
-        "menu_link": "/menu/baby-care"
-      },
-      {
-        "id": "15",
-        "name": "Pet Supplies",
-        "image": "https://i.ibb.co/g3php4K/petFood.png",
-        "menu_link": "/menu/pet-supplies"
-      },
-      {
-        "id": "16",
-        "name": "Health & Wellness",
-        "image": "https://i.ibb.co/vXqDPPh/health-Care.jpg",
-        "menu_link": "/menu/health-and-wellness"
-      },
-      {
-        "id": "17",
-        "name": "Ethnic Foods",
-        "image": "",
-        "menu_link": "/menu/ethnic-foods"
-      },
-      {
-        "id": "18",
-        "name": "Office Supplies",
-        "image": "",
-        "menu_link": "/menu/office-supplies"
-      },
-      {
-        "id": "19",
-        "name": "Home & Garden",
-        "image": "",
-        "menu_link": "/menu/home-and-garden"
-      },
-      {
-        "id": "20",
-        "name": "Electronics",
-        "image": "",
-        "menu_link": "/menu/electronics"
-      }
+  {
+    "id": "1",
+    "name": "Vegetables",
+    "image": "https://i.ibb.co/rHHnh3x/fruits-And-Vegs.png",
+    "menu_link": "/menu/fruits-and-vegetables"
+  },
+  {
+    "id": "1",
+    "name": "Fruits",
+    "image": "https://i.ibb.co/rHHnh3x/fruits-And-Vegs.png",
+    "menu_link": "/menu/fruits-and-vegetables"
+  },
+  {
+    "id": "2",
+    "name": "Dairy",
+    "image": "https://i.ibb.co/smHPdDm/dairy-eggs.jpg",
+    "menu_link": "/menu/dairy"
+  },
+  {
+    "id": "3",
+    "name": "Bakery",
+    "image": "https://i.ibb.co/P6dGHn2/baking.jpg",
+    "menu_link": "/menu/bakery"
+  },
+  {
+    "id": "4",
+    "name": "Meat & Seafood",
+    "image": "https://i.ibb.co/yd0rFQq/meat-And-Fish.jpg",
+    "menu_link": "/menu/meat-and-seafood"
+  },
+  {
+    "id": "5",
+    "name": "Pantry Essentials",
+    "image": "https://i.ibb.co/Ps2WKTJ/pest-control.jpg",
+    "menu_link": "/menu/pantry-essentials"
+  },
+  {
+    "id": "6",
+    "name": "Beverages",
+    "image": "https://i.ibb.co/Yc1pykG/beverages.png",
+    "menu_link": "/menu/beverages"
+  },
+  {
+    "id": "7",
+    "name": "Snacks",
+    "image": "https://i.ibb.co/DpJ69wV/snacks.jpg",
+    "menu_link": "/menu/snacks"
+  },
+  {
+    "id": "8",
+    "name": "Frozen Foods",
+    "image": "https://i.ibb.co/Ps2WKTJ/pest-control.jpg",
+    "menu_link": "/menu/frozen-foods"
+  },
+  {
+    "id": "9",
+    "name": "cooking",
+    "image": "https://i.ibb.co/y61gTGv/cooking.png",
+    "menu_link": "/menu/cooking"
+  },
+  {
+    "id": "10",
+    "name": "Canned Goods",
+    "image": "",
+    "menu_link": "/menu/canned-goods"
+  },
+  {
+    "id": "11",
+    "name": "Household",
+    "image": "https://i.ibb.co/j6VXdGb/home-cleaning.jpg",
+    "menu_link": "/menu/household"
+  },
+  {
+    "id": "12",
+    "name": "Personal Care",
+    "image": "https://i.ibb.co/2YQmR6n/beauty.jpg",
+    "menu_link": "/menu/personal-care"
+  },
+  {
+    "id": "13",
+    "name": "Baking Supplies",
+    "image": "",
+    "menu_link": "/menu/baking-supplies"
+  },
+  {
+    "id": "14",
+    "name": "Baby Care",
+    "image": "https://i.ibb.co/GRgc8H2/baby-care.jpg",
+    "menu_link": "/menu/baby-care"
+  },
+  {
+    "id": "15",
+    "name": "Pet Supplies",
+    "image": "https://i.ibb.co/g3php4K/petFood.png",
+    "menu_link": "/menu/pet-supplies"
+  },
+  {
+    "id": "16",
+    "name": "Health & Wellness",
+    "image": "https://i.ibb.co/vXqDPPh/health-Care.jpg",
+    "menu_link": "/menu/health-and-wellness"
+  },
+  {
+    "id": "17",
+    "name": "Ethnic Foods",
+    "image": "",
+    "menu_link": "/menu/ethnic-foods"
+  },
+  {
+    "id": "18",
+    "name": "Office Supplies",
+    "image": "",
+    "menu_link": "/menu/office-supplies"
+  },
+  {
+    "id": "19",
+    "name": "Home & Garden",
+    "image": "",
+    "menu_link": "/menu/home-and-garden"
+  },
+  {
+    "id": "20",
+    "name": "Electronics",
+    "image": "",
+    "menu_link": "/menu/electronics"
+  }
 ]
-

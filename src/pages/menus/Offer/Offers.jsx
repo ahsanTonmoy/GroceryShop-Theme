@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BiFilterAlt  } from "react-icons/bi";
+import OfferItem from './offeritem/OfferItem';
 
 const Offers = () => {
     const [groceryM, setGroceryM]= useState([]);
@@ -31,6 +32,11 @@ const Offers = () => {
                             }
                         </div>
                     </div>
+                </div>
+
+                {/* product content */}
+                <div className="">
+                    <div className=""><OfferItem/></div>
                 </div>
             </div>
         </div>
