@@ -5,6 +5,7 @@ import Sidebar from "./sidebar/Sidebar";
 import { FaLocationPin } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Footer from "../footer/Footer";
+import Login from "../../pages/user/login/Login";
 
 const Navigetions = ({ children }) => {
     const [toggle, setToggle] = useState(true)
@@ -53,14 +54,8 @@ const Navigetions = ({ children }) => {
                                     <div className=" mx-3 px-6 py-2 bg-[#ff686e] text-white uppercase font-semibold" onClick={() => document.getElementById('open').showModal()}>
                                         login
                                         {/* You can open the modal using document.getElementById('ID').showModal() method */}
-                                        <dialog id="open" className="modal text-black">
-                                            <div className="modal-box">
-                                                <form method="dialog">
-                                                    {/* if there is a button in form, it will close the modal */}
-                                                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                                                </form>
-                                               
-                                            </div>
+                                        <dialog id="open" className="modal text-black p-4">
+                                            <Login/>
                                         </dialog>
                                     </div>
 

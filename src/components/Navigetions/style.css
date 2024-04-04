@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-:root{
+
+:root {
   --header_bg: #414141;
   --white: #ffff;
 }
+
 .pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 900;
-  }
-
-  .sidebar .inner-section::-webkit-scrollbar{
-    width: 2px;
+  font-family: "Pacifico", cursive;
+  font-weight: 900;
 }
 
-.sidebar .inner-section::-webkit-scrollbar-track{
-    background: #eee;
-}
-.sidebar .inner-section::-webkit-scrollbar-thumb{
-    background: var(--header_bg);
-    border-radius: 10px;
+.sidebar .inner-section::-webkit-scrollbar {
+  width: 2px;
 }
 
+.sidebar .inner-section::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.sidebar .inner-section::-webkit-scrollbar-thumb {
+  background: var(--header_bg);
+  border-radius: 10px;
+}

@@ -1,0 +1,16 @@
+:root {
+    --header_bg: #eee;
+    --white: #ffff;
+  }
+.modal-box::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .modal-box::-webkit-scrollbar-track {
+    
+  }
+  
+  .modal-box::-webkit-scrollbar-thumb {
+    background: var(--header_bg);
+    border-radius: 10px;
+  }
