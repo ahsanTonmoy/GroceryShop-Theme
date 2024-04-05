@@ -6,16 +6,20 @@ import { FaLocationPin } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Footer from "../footer/Footer";
 import Login from "../../pages/user/login/Login";
+import Cart from "./cart/Cart";
+import CartBody from "./cart/cartBody/CartBody";
+import { GiPaperBagOpen } from "react-icons/gi";
 
 const Navigetions = ({ children }) => {
-    const [toggle, setToggle] = useState(true)
+    const [toggle, setToggle] = useState(true);
+    const [openCart, setOpenCart] = useState(false);
     return (
         <div>
             <div className="drawer h-fit">
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
                     {/* Navbar */}
-                    <div className="w-full navbar bg-[#fdd670] fixed z-10 px-6 py-0">
+                    <div className="w-full navbar bg-[#fdd670] fixed z-20 px-6 py-0">
                         <div className="flex-none ">
                             <button onClick={() => setToggle(!toggle)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
                         </div>
@@ -55,7 +59,7 @@ const Navigetions = ({ children }) => {
                                         login
                                         {/* You can open the modal using document.getElementById('ID').showModal() method */}
                                         <dialog id="open" className="modal text-black p-4">
-                                            <Login/>
+                                            <Login />
                                         </dialog>
                                     </div>
 
@@ -78,15 +82,43 @@ const Navigetions = ({ children }) => {
 
                                     </ul>
                                 </div>
-                                <div className=" ml-60 w-full mt-16">
+                                
+                                <div className=" ml-60 w-full mt-16 ">
                                     <Outlet />
                                     <Footer />
                                 </div>
+
                             </div> : <div className="ml-0  mt-16">
                                 <Outlet />
                                 <Footer />
                             </div>
                     }
+                    <div className="  md:block">
+                        <div className="cart fixed top-[50%] right-0">
+                            <button onClick={() => setOpenCart(true)}> <Cart /></button>
+                        </div>
+
+                        {
+                            openCart ?
+                                <div className="h-screen w-80 fixed  top-16  right-0 bg-base-200 shadow-xl ">
+                                    <div className="bg-base-300 p-2 flex justify-between">
+                                        <div className="text-md uppercase font-bold inline-flex">
+                                            <div className="text-2xl mx-1"><GiPaperBagOpen /></div>
+                                            <div className="">2 items</div>
+                                        </div>
+
+                                        <div className="">
+                                            <button onClick={() => setOpenCart(false)} className="border border-black rounded py-1 px-4 text-xs uppercase font-semibold" >
+                                                close
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div className=""><CartBody /></div>
+                                </div> : null
+                        }
+                    </div>
+
 
                 </div>
 

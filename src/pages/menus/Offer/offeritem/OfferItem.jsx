@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { ImPower } from "react-icons/im";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import useCetagory from "../../../../hooks/useCetagory/useCetagory";
 
 const OfferItem = () => {
+    const [cetagory] = useCetagory();
     const [products, setProducts] = useState([]);
 
     useEffect((() => {
@@ -12,7 +14,7 @@ const OfferItem = () => {
     }), [])
 
 
-    const offers = products.filter(fruit => fruit.has_offer === true);
+    const offers = cetagory.filter(item => item.has_offer === true);
     console.log(offers);
     return (
         <div>
@@ -24,7 +26,7 @@ const OfferItem = () => {
                         offers.map(item => <div key={item.id} className="item flex gap-4 border w-full h-[240px] p-4 rounded">
                             <div className="w-2/3 relative">
                                 <img src={item.image} className=" w-full h-full" />
-                                <div className=" absolute top-2 -left-1 border-l-8 border-[#ff686e] bg-black bg-opacity-30 text-white px-2 py-1 font-bold capitalize mr-2">{item.offer}</div>
+                                <div className=" absolute top-2 -left-1 border-l-8 border-[#ff686e] bg-black bg-opacity-50 text-white px-2 py-1 font-bold capitalize mr-2">{item.offer}</div>
                             </div>
                             <div className="w-1/3 py-4 text-center grid gap-2">
                                 <div className=" grid gap-1">

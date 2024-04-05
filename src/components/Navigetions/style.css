@@ -19,6 +19,6 @@
 }
 
 .sidebar .inner-section::-webkit-scrollbar-thumb {
-  background: var(--header_bg);
+  background: #414141;
   border-radius: 10px;
 }

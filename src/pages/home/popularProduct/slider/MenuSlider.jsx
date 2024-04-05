@@ -16,7 +16,7 @@ const MenuSlider = () => {
             .then(data => setGroceryM(data))
     }), [])
     return (
-        <div>
+        <div className="mx-4">
             {" "}
             <br />
             <Swiper watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
