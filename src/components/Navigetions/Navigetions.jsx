@@ -9,6 +9,7 @@ import Login from "../../pages/user/login/Login";
 import Cart from "./cart/Cart";
 import CartBody from "./cart/cartBody/CartBody";
 import { GiPaperBagOpen } from "react-icons/gi";
+import ButtomNav from "./buttomNav/ButtomNav";
 
 const Navigetions = ({ children }) => {
     const [toggle, setToggle] = useState(true);
@@ -72,28 +73,55 @@ const Navigetions = ({ children }) => {
                     {/* Page content here */}
                     {children}
 
-                    {
-                        toggle ?
-                            <div className=" flex">
-                                <div className=" sidebar fixed top-16 bg-base-100 z-10">
-                                    <ul className=" inner-section menu block p-4 w-fit h-screen overflow-auto">
-                                        {/* Sidebar content here */}
-                                        <Sidebar />
+                    <div className="hidden md:block">
+                        {
+                            toggle ?
+                                <div className=" flex">
+                                    <div className=" sidebar fixed top-16 bg-base-100 z-10">
+                                        <ul className=" inner-section menu p-4 w-fit h-screen overflow-auto">
+                                            {/* Sidebar content here */}
+                                            <Sidebar />
 
-                                    </ul>
-                                </div>
-                                
-                                <div className=" ml-60 w-full mt-16 ">
+                                        </ul>
+                                    </div>
+
+                                    <div className=" lg:ml-60 w-full mt-16 ">
+                                        <Outlet />
+                                        <Footer />
+                                    </div>
+
+                                </div> : <div className="ml-0  mt-16">
                                     <Outlet />
                                     <Footer />
                                 </div>
+                        }
+                    </div>
 
-                            </div> : <div className="ml-0  mt-16">
-                                <Outlet />
-                                <Footer />
-                            </div>
-                    }
-                    <div className="  md:block">
+                    <div className="block md:hidden">
+                        {
+                            !toggle ?
+                                <div className=" flex">
+                                    <div className=" sidebar shadow-2xl fixed top-16 bg-base-100 z-10">
+                                        <ul className=" inner-section menu p-4 w-fit h-screen overflow-auto">
+                                            {/* Sidebar content here */}
+                                            <Sidebar />
+
+                                        </ul>
+                                    </div>
+
+                                    <div className=" lg:ml-60 w-full mt-16 ">
+                                        <Outlet />
+                                        <Footer />
+                                    </div>
+
+                                </div> : <div className="ml-0  mt-16">
+                                    <Outlet />
+                                    <Footer />
+                                </div>
+                        }
+                    </div>
+
+                    <div className="hidden  md:block">
                         <div className="cart fixed top-[50%] right-0">
                             <button onClick={() => setOpenCart(true)}> <Cart /></button>
                         </div>
@@ -117,6 +145,10 @@ const Navigetions = ({ children }) => {
                                     <div className=""><CartBody /></div>
                                 </div> : null
                         }
+                    </div>
+
+                    <div className=" ">
+                        <ButtomNav/>
                     </div>
 
 

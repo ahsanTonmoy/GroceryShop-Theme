@@ -17,26 +17,48 @@ const MenuSlider = () => {
     }), [])
     return (
         <div className="mx-4">
-            {" "}
+
             <br />
-            <Swiper watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
-                {
-                    groceryM.map(menu => <SwiperSlide key={menu.id}>
-                        <Link className="bg-red-500 " to={menu.menu_link}>
-                            <div className="border shadow-sm p-2 m-4">
-                                <div className="px-3">
-                                    <img className="w-full" src={menu.image} alt="" />
+            <div className="hidden md:block">
+                <Swiper slidesPerView={3} className="mySwiper">
+                    {
+                        groceryM.map(menu => <SwiperSlide key={menu.id}>
+                            <Link className=" " to={menu.menu_link}>
+                                <div className="border shadow-sm p-2 m-4">
+                                    <div className="px-3">
+                                        <img className="w-full" src={menu.image} alt="" />
+                                    </div>
+
+                                    <div className=" text-red-900 text-xl p-2">{menu.name}</div>
                                 </div>
+                            </Link>
 
-                                <div className=" text-red-900 text-xl p-2">{menu.name}</div>
-                            </div>
-                        </Link>
-
-                    </SwiperSlide>)
-                }
+                        </SwiperSlide>)
+                    }
 
 
-            </Swiper>
+                </Swiper>
+            </div>
+            <div className="block md:hidden">
+                <Swiper slidesPerView={1} className="mySwiper">
+                    {
+                        groceryM.map(menu => <SwiperSlide key={menu.id}>
+                            <Link className=" " to={menu.menu_link}>
+                                <div className="border shadow-sm p-2 m-4">
+                                    <div className="px-3">
+                                        <img className="w-full" src={menu.image} alt="" />
+                                    </div>
+
+                                    <div className=" text-red-900 text-xl p-2">{menu.name}</div>
+                                </div>
+                            </Link>
+
+                        </SwiperSlide>)
+                    }
+
+
+                </Swiper>
+            </div>
         </div >
     );
 };

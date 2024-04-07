@@ -1,13 +1,22 @@
-
 .swiper {
-    width: 800px;
+  width: 800px;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+@media screen and (max-width: 950px){
+  .swiper {
+    width: 500px;
   }
-  .swiper-slide {
-    height: 300px;
-    line-height: 300px;
-    text-align: center;
+}
+@media screen and (max-width: 750px){
+  .swiper {
+    width: 300px;
   }
-  /* .swiper-slide:nth-child(2) {
+}
+/* .swiper-slide:nth-child(2) {
     background: #8acc7d;
   }
   .swiper-slide:nth-child(3) {
@@ -25,4 +34,3 @@
   .swiper-slide:nth-child(7) {
     background: #cc7dae;
   } */
-  

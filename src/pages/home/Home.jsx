@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className=' h-full w-full'>
             <div className=""><H_bannar /></div>
-            <div className="p-10 md:p-20">
+            <div className="p-4 md:p-20">
                 <div className=""><About /></div>
                 <div className=""><Populer/></div>
             </div>

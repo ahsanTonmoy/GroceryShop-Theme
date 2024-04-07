@@ -2,7 +2,7 @@
 const H_bannar = () => {
     return (
         <div >
-            <div className="h-fit p-10 md:p-20 bg-repeat" style={{ backgroundImage: `url('https://i.ibb.co/brXYtjJ/landing-Banner.png')` }}>
+            <div className="h-fit p-4 md:p-20 bg-repeat" style={{ backgroundImage: `url('https://i.ibb.co/brXYtjJ/landing-Banner.png')` }}>
                 <div className="grid md:grid-cols-2 gap-6 grid-cols-1">
                     <div className="my-8">
                         <div className="title font-bold text-4xl">
